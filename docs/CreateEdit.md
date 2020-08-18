@@ -1024,7 +1024,7 @@ const ageValidation = (value, allValues) => {
     if (value < 18) {
         return 'Must be over 18';
     }
-    return [];
+    return undefined;
 };
 
 const validateFirstName = [required(), maxLength(15)];
